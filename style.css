@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --myColor:  rgb(4, 57, 77);
+    --myShadow: 5px 5px 15px rgb(2, 26, 34), -5px -5px 15px rgb(21, 80, 102);
+}
+.main{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--myColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    padding: 2vw;
+    border-radius: 12px;
+    min-height: 70vh;
+    width: 60vw;
+    background-color: var(--myColor);
+    box-shadow: var(--myShadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+input::placeholder {
+    color:#adadad;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+     opacity: 0;
+}
+input{
+    background-color:var(--myColor);
+    box-shadow: var(--myShadow);
+    border: none;
+    outline: none;
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+button{
+    background-color:var(--myColor);
+    box-shadow: var(--myShadow);
+    border: none;
+    color: white;
+    outline: none;
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.yesButton:hover{
+    background-color:rgb(19, 62, 78);
+    transition: all ease-in-out 0.4s;
+}
+
+h2{
+    font-size: 2rem;
+    color: white;
+}
+.subChild{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+p{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:850px){
+    
+   h1{
+    font-size: 2rem;
+   }
+   h2{
+    font-size: 1.5rem;
+   }
+   p, input{
+    font-size: 1rem;
+   }
+   input{
+    width: 80%;
+   }
+   button{
+    width: 50%;
+   }
+}
+@media screen and (max-width:650px){
+    .child{
+        width: 70vw;
+    }
+   h1{
+    font-size: 1.5rem;
+   }
+   h2{
+    font-size: 1.5rem;
+   }
+   p, input,button{
+    font-size: 1rem;
+   }
+   input{
+    width: 90%;
+   }
+   button{
+    width: 70%;
+   }
+   
+}
+@media screen and (max-width:352px){
+    .child{
+        width: 90vw;
+    }
+   h1{
+    font-size: 1rem;
+   }
+   h2{
+    font-size: 0.9rem;
+   }
+   p, input,button{
+    font-size: 0.9rem;
+   }
+   input{
+    width: 90%;
+   }
+   button{
+    width: 70%;
+   }
+   
+}
