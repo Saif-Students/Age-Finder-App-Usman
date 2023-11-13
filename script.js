@@ -10,15 +10,15 @@ let result = document.querySelector('.result')
     if (input.value) {
         let myAge = Number(input.value)
     
-        let subTractFrom57 = 57 - myAge
+        let subTractFrom67 = 67 - myAge
     
     
-        let addWith1967 = 1967 + subTractFrom57;
+        let addWith1956 = 1956 + subTractFrom67;
     
-        console.log(addWith1967, typeof addWith1967);
+        console.log(addWith1956, typeof addWith1956);
     
         
-        result.innerHTML = addWith1967;
+        result.innerHTML = addWith1956;
         
     }
 
